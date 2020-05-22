@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "LuciferSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/lucifersans-regular.woff2') format('woff2'),
+       url('../fonts/lucifersans-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: "LuciferSans-Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/lucifersans-condensed-semibold.woff2.woff2') format('woff2'),
+       url('../fonts/lucifersans-condensed-semibold.woff2.woff') format('woff')
+}

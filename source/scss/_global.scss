@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: $background-color-1;
+  font-family: LuciferSans, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-color-1;
+}
+
+body.modal-active {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
