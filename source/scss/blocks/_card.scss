@@ -4,7 +4,6 @@
   grid-template-rows: repeat(2, min-content);
   grid-template-areas:  "picture title"
                         "picture description";
-  column-gap: 30px;
 
   background-color: $background-color-1;
   border: 1px solid #000;
@@ -22,7 +21,7 @@
   margin-top: -6px;
 
   color: $text-color-2;
-  font-family: LuciferSansSemiCondensed;
+  font-family: LuciferSansSemiCondensed, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
   line-height: 21px;
@@ -36,7 +35,7 @@
   margin: 0;
   margin-bottom: -4px;
 
-  font-family: LuciferSansSemiCondensed;
+  font-family: LuciferSansSemiCondensed, Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -61,4 +60,14 @@
   background-repeat: no-repeat;
   background-size: 48px;
   border: none;
+
+  cursor: pointer;
+
+  &--small {
+    top: 6px;
+    right: 6px;
+    width: 40px;
+    height: 40px;
+    background-size: 24px;
+  }
 }

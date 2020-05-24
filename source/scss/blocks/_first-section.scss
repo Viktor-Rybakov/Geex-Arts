@@ -1,8 +1,14 @@
 .first-section {
   position: relative;
+  
+  display: grid;
+  grid-template-columns: 211fr 698fr 102fr 479fr 219fr 165fr 46fr;
+  grid-template-rows: repeat(4, min-content);
+  justify-items: start;
+  
+  padding-top: 6px;
+  margin-bottom: 60px;
   overflow: hidden;
-
-  padding-top: 90px;
 
   &::after {
     content:"";
@@ -20,46 +26,64 @@
 }
 
 .first-section__picture {
-  position: absolute;
-  
   &--left {
-    left: 212px;
-    top: 95px;
-
+    grid-column: 2/4;
+    grid-row: 1/2;
     z-index: 2;
+    margin-top: 88px;
+    margin-bottom: 121px;
   }
 
   &--right {
-    right: 45px;
-    top: 7px;
-
+    grid-column: 5/7;
+    grid-row: 1/2;
     z-index: 1;
   }
 
   &--center {
-    right: 212px;
-    bottom: 107px;
-
+    grid-column: 3/6;
+    grid-row: 1/4;
     z-index: 4;
+    margin-top: 218px;
+
+    @media (min-width: 1200px) {
+      margin-top: 255px;
+    }
+    @media (min-width: 1350px) {
+      margin-top: 293px;
+    }
+    @media (min-width: 1600px) {
+      margin-top: 320px;
+    }
+    @media (min-width: 1920px) {
+      margin-top: 314px;
+    }
   }
 }
 
 .first-section__menu {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
   margin: 0;
   margin-left: 24px;
-  margin-bottom: 173px;
+  margin-top: 84px;
 }
 
 .first-section__persons {
+  grid-column: 2/3;
+  grid-row: 2/4;
   margin: 0;
-  margin-left: 211px;
 }
 
 .first-section__subtitle {
-  margin: -1px auto 0 auto;
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  justify-self: center;
+  margin: 0;
 
   font-size: 18px;
-  font-family: "LuciferSansSemiCondensed";
+  font-family: LuciferSansSemiCondensed, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -67,62 +91,129 @@
   letter-spacing: -0.5px;
 }
 
-.first-section__paris {
-  position: absolute;
-  bottom: 1174px;
-  right: 492px;
-  display: block;
-  font-size: 21px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-}
-
-.first-section__2019 {
-  position: absolute;
-  bottom: 1197px;
-  right: 458px;
-  display: block;
-  color: $text-color-3;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-}
-
-
 .first-section__title {
   position: absolute;
 
   color: $text-color-3;
-  font-family: "LuciferSansSemiCondensed";
-  font-size: 400px;
+  font-family: LuciferSansSemiCondensed, Arial, sans-serif;
+  font-size: 200px;
   font-weight: bold;
   text-transform: uppercase;
+  pointer-events: none;
 
-  &--top {
-    top: 39px;
+  @media (min-width: 1200px) {
+    font-size: 250px;
+  }
+  @media (min-width: 1350px) {
+    font-size: 300px;
+  }
+  @media (min-width: 1600px) {
+    font-size: 350px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 400px;
+  }
+
+  &--suvi {
+    top: 67px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+
+    @media (min-width: 1200px) {
+      top:59px
+    }
+    @media (min-width: 1350px) {
+      top:52px
+    }
+    @media (min-width: 1600px) {
+      top: 45px;
+    }
+    @media (min-width: 1920px) {
+      top: 39px;
+    }
+
+    &::before {
+      content: "Paris";
+      position: absolute;
+      right: -48px;
+      bottom: 42px;
+      display: block;
+      color: $text-color-1;
+      font-size: 21px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+
+      @media (min-width: 1200px) {
+        right: -46px;
+        bottom: 48px;
+      }
+      @media (min-width: 1350px) {
+        right: -42px;
+        bottom: 54px;
+      }
+      @media (min-width: 1600px) {
+        right: -40px;
+        bottom: 69px;
+      }
+      @media (min-width: 1920px) {
+        right: -37px;
+        bottom: 119px;
+      }
+    }
+
+    &::after {
+      content: "2019";
+      position: absolute;
+      right: -70px;
+      bottom: 65px;
+      display: block;
+      color: $text-color-3;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+
+      @media (min-width: 1200px) {
+        right: -70px;
+        bottom: 71px;
+      }
+      @media (min-width: 1350px) {
+        right: -70px;
+        bottom: 77px;
+      }
+      @media (min-width: 1600px) {
+        right: -70px;
+        bottom: 92px;
+      }
+      @media (min-width: 1920px) {
+        right: -70px;
+        bottom: 142px;
+      }
+    }
   }
 
-  &--bottom {
+  &--kopon {
     bottom: 384px;
-    left: 37px;
+    left: 1.92%;
     z-index: 6;
-  }
-  
-  &--letter-e {
-    bottom: 450px;
-    left: 1474px;
-    transform: rotate(-28deg);
-    z-index: 6;
-  }
-  
-  &--letter-n {
-    bottom: 701px;
-    left: 1692px;
-    transform: rotate(-64deg);
-    z-index: 6;
+
+    &::before {
+      content: "e";
+      position: absolute;
+      right: -0.71em;
+      bottom: 0.17em;
+      transform: rotate(-28deg);
+      z-index: 6;
+    }
+
+    &::after {
+      content: "n";
+      position: absolute;
+      right: -1.39em;
+      bottom: 0.79em;
+      transform: rotate(-64deg);
+      z-index: 6;
+    }
   }
 }
 
@@ -135,4 +226,5 @@
   width: 468px;
   min-height: 261px;
   padding: 23px 30px;
+  column-gap: 30px;
 }
