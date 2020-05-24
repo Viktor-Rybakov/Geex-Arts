@@ -74,21 +74,35 @@
 .second-section__card {
   position: absolute;
   bottom: 83px;
-  left: 5%;
+  left: -3000px;
 
   width: 418px;
   min-height: 261px;
   padding: 32px 39px;
   column-gap: 21px;
+
+  &--animation {
+    animation-name: second-card;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .second-section__flip-card {
   position: absolute;
   bottom: 364px;
-  left: 12%;
+  left: -3000px;
   
   width: 625px;
   height: 449px;
+
+  &--animation {
+    animation-name: third-card;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
 
   @media (min-width: 1600px) {
     bottom: 464px;
@@ -104,13 +118,36 @@
 .second-section__title {
   position: absolute;
   bottom: 75px;
-  left: 51.4%;
+  left: -3000px;
 
   color: $text-color-3;
   font-family: LuciferSansSemiCondensed, Arial, sans-serif;
   font-size: 120px;
   font-weight: bold;
   text-transform: uppercase;
+
+  &--animation {
+    animation-name: winter;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    &::before {
+      animation-name: winter-e;
+      animation-duration: 1.5s;
+      animation-delay: 2.2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+
+    &::after {
+      animation-name: winter-r;
+      animation-duration: 1.5s;
+      animation-delay: 2.2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+  }
 
   @media (min-width: 1200px) {
     font-size: 140px;
@@ -130,16 +167,16 @@
   &::before {
     content: "e";
     position: absolute;
-    right: -0.68em;
-    bottom: 0.13em;
-    transform: rotate(-25deg);
+    right: -0.6em;
+    bottom: 0;
+    transform: rotate(0);
   }
 
   &::after {
     content: "r";
     position: absolute;
-    right: -1.29em;
-    bottom: 0.6em;
-    transform: rotate(-53deg);
+    right: -1.2em;
+    bottom: 0;
+    transform: rotate(0);
   }
 }

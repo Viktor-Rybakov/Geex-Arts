@@ -116,9 +116,14 @@
 
   &--suvi {
     top: 67px;
-    left: 50%;
+    left: -3000px;
     transform: translateX(-50%);
     z-index: 3;
+
+    animation-name: suvi;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 
     @media (min-width: 1200px) {
       top:59px
@@ -194,25 +199,41 @@
 
   &--kopon {
     bottom: 384px;
-    left: 1.92%;
+    left: -3000px;
     z-index: 6;
+
+    animation-name: koponen;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 
     &::before {
       content: "e";
       position: absolute;
-      right: -0.71em;
-      bottom: 0.17em;
-      transform: rotate(-28deg);
+      right: -0.6em;
+      bottom: 0;
+      transform: rotate(0);
       z-index: 6;
+
+      animation-name: koponen-e;
+      animation-duration: 1.5s;
+      animation-delay: 2.2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
     }
 
     &::after {
       content: "n";
       position: absolute;
-      right: -1.39em;
-      bottom: 0.79em;
-      transform: rotate(-64deg);
+      right: -1.27em;
+      bottom: 0;
+      transform: rotate(0);
       z-index: 6;
+
+      animation-name: koponen-n;
+      animation-duration: 1.5s;
+      animation-delay: 2.2s;
+      animation-fill-mode: forwards;
     }
   }
 }
@@ -220,11 +241,16 @@
 .first-section__card {
   position: absolute;
   bottom: 177px;
-  left: 498px;
+  left: -3000px;
   z-index: 5;
 
   width: 468px;
   min-height: 261px;
   padding: 23px 30px;
   column-gap: 30px;
+
+  animation-name: first-card;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }

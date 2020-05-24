@@ -1,0 +1,105 @@
+@keyframes suvi {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes koponen {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 1.92%;
+  }
+}
+
+@keyframes koponen-e {
+  from {
+    right: -0.6em;
+    bottom: 0;
+    transform: rotate(0);
+  }
+  to {
+    right: -0.71em;
+    bottom: 0.17em;
+    transform: rotate(-28deg);
+  }
+}
+
+@keyframes koponen-n {
+  from {
+    right: -1.27em;
+    bottom: 0;
+    transform: rotate(0);
+  }
+  to {
+    right: -1.39em;
+    bottom: 0.79em;
+    transform: rotate(-64deg);
+  }
+}
+
+@keyframes first-card {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 26%;
+  }
+}
+
+@keyframes second-card {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@keyframes third-card {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 12%;
+  }
+}
+
+@keyframes winter {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 51.4%;
+  }
+}
+
+@keyframes winter-e {
+  from {
+    right: -0.6em;
+    bottom: 0;
+    transform: rotate(0);
+  }
+  to {
+    right: -0.68em;
+    bottom: 0.13em;
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes winter-r {
+  from {
+    right: -1.2em;
+    bottom: 0;
+    transform: rotate(0);
+  }
+  to {
+    right: -1.29em;
+    bottom: 0.6em;
+    transform: rotate(-53deg);
+  }
+}
