@@ -3,15 +3,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/lucifersans-regular.woff2') format('woff2'),
-       url('../fonts/lucifersans-regular.woff') format('woff')
+  src: url('../fonts/lucifer-sans-regular.woff2') format('woff2'),
+       url('../fonts/lucifer-sans-regular.woff') format('woff')
 }
 
 @font-face {
-  font-family: "LuciferSans-Condensed";
+  font-family: "LuciferSansSemiCondensed";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-display: swap;
-  src: url('../fonts/lucifersans-condensed-semibold.woff2.woff2') format('woff2'),
-       url('../fonts/lucifersans-condensed-semibold.woff2.woff') format('woff')
+  src: url('../fonts/lucifer-sans-semi-condensed-bold.woff2') format('woff2'),
+       url('../fonts/lucifer-sans-semi-condensed-bold.woff') format('woff')
 }

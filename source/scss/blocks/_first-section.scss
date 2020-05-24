@@ -1,0 +1,138 @@
+.first-section {
+  position: relative;
+  overflow: hidden;
+
+  padding-top: 90px;
+
+  &::after {
+    content:"";
+    position: absolute;
+    z-index: 6;
+    display: block;
+    width: 2px;
+    height: 80px;
+    left: 50%;
+    bottom: 67px;
+    transform: translateX(-50%);
+
+    background-image: linear-gradient(#F7F7F7 0%, #F7F7F7 50%, #000000 50%, #000000 100%);
+  }
+}
+
+.first-section__picture {
+  position: absolute;
+  
+  &--left {
+    left: 212px;
+    top: 95px;
+
+    z-index: 2;
+  }
+
+  &--right {
+    right: 45px;
+    top: 7px;
+
+    z-index: 1;
+  }
+
+  &--center {
+    right: 212px;
+    bottom: 107px;
+
+    z-index: 4;
+  }
+}
+
+.first-section__menu {
+  margin: 0;
+  margin-left: 24px;
+  margin-bottom: 173px;
+}
+
+.first-section__persons {
+  margin: 0;
+  margin-left: 211px;
+}
+
+.first-section__subtitle {
+  margin: -1px auto 0 auto;
+
+  font-size: 18px;
+  font-family: "LuciferSansSemiCondensed";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+}
+
+.first-section__paris {
+  position: absolute;
+  bottom: 1174px;
+  right: 492px;
+  display: block;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.first-section__2019 {
+  position: absolute;
+  bottom: 1197px;
+  right: 458px;
+  display: block;
+  color: $text-color-3;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+
+.first-section__title {
+  position: absolute;
+
+  color: $text-color-3;
+  font-family: "LuciferSansSemiCondensed";
+  font-size: 400px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &--top {
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  &--bottom {
+    bottom: 384px;
+    left: 37px;
+    z-index: 6;
+  }
+  
+  &--letter-e {
+    bottom: 450px;
+    left: 1474px;
+    transform: rotate(-28deg);
+    z-index: 6;
+  }
+  
+  &--letter-n {
+    bottom: 701px;
+    left: 1692px;
+    transform: rotate(-64deg);
+    z-index: 6;
+  }
+}
+
+.first-section__card {
+  position: absolute;
+  bottom: 177px;
+  left: 498px;
+  z-index: 5;
+
+  width: 468px;
+  min-height: 261px;
+  padding: 23px 30px;
+}

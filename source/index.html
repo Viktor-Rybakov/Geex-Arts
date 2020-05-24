@@ -8,10 +8,139 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <link rel="preload" href="fonts/lucifersans-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/lucifersans-condensed-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lucifer-sans-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lucifer-sans-semi-condensed-regular.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
+  <header class="header">
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Shamel</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Services</a>
+        </li>
+        <li class="menu__item">
+          <button class="menu__button menu__button--burger" type="button" aria-label="Open menu">
+            <svg width="48" height="14" viewBox="0 0 48 14" fill="black" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="2"/>
+              <rect y="6" width="48" height="1"/>
+              <rect y="11" width="48" height="3"/>
+            </svg>
+          </button>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">About</a>
+        </li>
+        <li class="menu__item">
+          <button class="menu__button menu__button--star" type="button" aria-label="Star">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="#060606" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6458 25.6801L9.40324 31.4942L11.6117 22.4731L2.3793 21.4629L10.3198 16.6457L4.50577 9.4031L13.5269 11.6115L14.537 2.37916L19.3543 10.3196L26.5968 4.50563L24.3884 13.5267L33.6208 14.5369L25.6803 19.3541L31.4943 26.5967L22.4732 24.3882L21.4631 33.6206L16.6458 25.6801Z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section first-section">
+    <h1 class="visually-hidden">Suvi Koponen</h1>
+
+    <div class="first-section__title first-section__title--top" aria-hidden="true">Suvi</div>
+    <div class="first-section__title first-section__title--bottom" aria-hidden="true">Kopon</div>
+    <div class="first-section__title first-section__title--letter-e" aria-hidden="true">e</div>
+    <div class="first-section__title first-section__title--letter-n" aria-hidden="true">n</div>
+
+    <div class="first-section__paris">Paris</div>
+    <div class="first-section__2019">2019</div>
+    
+    <picture class="picture first-section__picture first-section__picture--left">
+      <source type="image/webp"
+              sizes="800px"
+              srcset="img/webp/photo1-800.webp 800w,
+                      img/webp/photo1-1600.webp 1600w">
+      <img  class="picture__image"
+            src="img/photo1-800.jpg"
+            sizes="800px"
+            srcset="img/photo1-1600.jpg 1600w"
+            width="800"
+            alt="Suvi Koponen is watching to right side">
+    </picture>
+    <picture class="picture first-section__picture first-section__picture--center">
+      <source type="image/webp"
+              sizes="800px"
+              srcset="img/webp/photo2-800.webp 800w,
+                      img/webp/photo2-1600.webp 1600w">
+      <img  class="picture__image"
+            src="img/photo2-800.jpg"
+            sizes="800px"
+            srcset="img/photo2-1600.jpg 1600w"
+            width="800"
+            alt="Suvi Koponen stay and loking forward">
+    </picture>
+    <picture class="picture first-section__picture first-section__picture--right">
+      <source type="image/webp"
+              sizes="384px"
+              srcset="img/webp/photo3-384.webp 800w,
+                      img/webp/photo3-768.webp 1600w">
+      <img  class="picture__image"
+            src="img/photo3-384.jpg"
+            sizes="384px"
+            srcset="img/photo3-768.jpg 1600w"
+            width="384"
+            alt="Suvi Koponen with winded hair">
+    </picture>
+
+    <ul class="side-menu first-section__menu">
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="#">Fashion</a>
+      </li>
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="#">Design</a>
+      </li>
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="#">Covers</a>
+      </li>
+    </ul>
+
+    <dl class="persons first-section__persons">
+      <dt class="pesrsons__role">Model</dt>
+      <dd class="persons__name">Suvi Koponen</dd>
+
+      <dt class="pesrsons__role">Photographer</dt>
+      <dd class="persons__name">Melanie + Ramon</dd>
+
+      <dt class="pesrsons__role">Makeup artist</dt>
+      <dd class="persons__name">Jordi Fontanals</dd>
+    </dl>
+
+    <h2 class="first-section__subtitle">
+      Massimo Dutti Fall-winner<br>
+      2019 AD Campaign
+    </h2>
+
+    <article class="card first-section__card">
+      <h3 class="card__title">Helen Keller A Teller And <br>A Seller</h3>
+      <picture class="picture card__picture">
+        <source type="image/webp"
+                sizes="154px"
+                srcset="img/webp/photo4-154.webp 154w,
+                        img/webp/photo4-308.webp 308w">
+        <img  class="picture__image"
+              src="img/photo4-154.jpg"
+              sizes="154px"
+              srcset="img/photo4-308.jpg 308w"
+              width="154"
+              alt="Suvi Koponen with bag">
+      </picture>
+      <p class="card__description">The 6 Step Non Surgical Facial Rejuvenation Program</p>
+
+      <button class="card__button" type="button" aria-label="Open card"></button>
+    </article>
+  </section>
+
+  
   
 </body>
 </html>
