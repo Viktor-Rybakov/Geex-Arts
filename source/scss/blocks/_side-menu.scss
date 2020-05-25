@@ -29,9 +29,17 @@
 
   transform: rotate(180deg);
 
-  background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"%3E%3Cg transform="rotate(180 8 8)"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M4.27478 12.76L10.4569 6.57786L10.4734 10.9582L12.1769 10.9647L12.1494 3.66403L4.84873 3.63648L4.85516 5.33996L9.23555 5.35649L3.05341 11.5386L4.27478 12.76Z"/%3E%3C/g%3E%3C/svg%3E');
+  background-image: url(../img/arrow_rotate.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 16px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    color: gray;
+  }
+  
+  @include retina {
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"%3E%3Cg transform="rotate(180 8 8)"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M4.27478 12.76L10.4569 6.57786L10.4734 10.9582L12.1769 10.9647L12.1494 3.66403L4.84873 3.63648L4.85516 5.33996L9.23555 5.35649L3.05341 11.5386L4.27478 12.76Z"/%3E%3C/g%3E%3C/svg%3E');
+  }
 
 }

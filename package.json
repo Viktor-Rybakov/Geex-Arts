@@ -22,9 +22,8 @@
     "gulp-webp": "^4.0.1"
   },
   "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "last 3 versions",
+    "IE 10"
   ],
   "scripts": {
     "dev": "gulp dev"

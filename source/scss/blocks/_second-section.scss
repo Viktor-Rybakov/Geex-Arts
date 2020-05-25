@@ -1,8 +1,11 @@
 .second-section {
   position: relative;
 
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 211fr 698fr 800fr 211fr;
   grid-template-columns: 211fr 698fr 800fr 211fr;
+  -ms-grid-rows: min-content;
   grid-template-rows: min-content;
 
   padding-top: 22px;
@@ -16,8 +19,11 @@
 }
 
 .second-section__description {
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
   grid-column: 2/3;
   grid-row: 1/2;
+
   margin: 0;
   margin-right: 49px;
 
@@ -29,6 +35,10 @@
 
   text-transform: uppercase;
   writing-mode: vertical-rl;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    max-height: 1000px;
+  }
 
   @media (min-width: 1200px) {
     font-size: 90px;
@@ -53,6 +63,8 @@
 }
 
 .second-section__picture {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
   grid-column: 3/4;
   grid-row: 1/2;
   margin-top: 84px;
@@ -81,10 +93,12 @@
   padding: 32px 39px;
   column-gap: 21px;
 
+  will-change: left;
+
   &--animation {
     animation-name: second-card;
     animation-duration: 1.5s;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 }
@@ -97,10 +111,12 @@
   width: 625px;
   height: 449px;
 
+  will-change: left;
+
   &--animation {
     animation-name: third-card;
     animation-duration: 1.5s;
-    animation-delay: 3s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
   }
 
@@ -126,16 +142,18 @@
   font-weight: bold;
   text-transform: uppercase;
 
+  will-change: left;
+
   &--animation {
     animation-name: winter;
     animation-duration: 2s;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 
     &::before {
       animation-name: winter-e;
       animation-duration: 1.5s;
-      animation-delay: 2.2s;
+      animation-delay: 1.7s;
       animation-fill-mode: forwards;
       animation-timing-function: ease-out;
     }
@@ -143,7 +161,7 @@
     &::after {
       animation-name: winter-r;
       animation-duration: 1.5s;
-      animation-delay: 2.2s;
+      animation-delay: 1.7s;
       animation-fill-mode: forwards;
       animation-timing-function: ease-out;
     }
@@ -170,6 +188,8 @@
     right: -0.6em;
     bottom: 0;
     transform: rotate(0);
+
+    will-change: right, bottom, transform;
   }
 
   &::after {
@@ -178,5 +198,7 @@
     right: -1.2em;
     bottom: 0;
     transform: rotate(0);
+
+    will-change: right, bottom, transform;
   }
 }

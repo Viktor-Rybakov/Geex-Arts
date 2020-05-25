@@ -1,6 +1,9 @@
 .menu__list {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: min-content;
   grid-auto-columns: 1fr;
   justify-items: center;
   align-items: center;
@@ -14,9 +17,11 @@
 .menu__item {
 
   &:nth-of-type(1) {
+    -ms-grid-column: 1;
     justify-self: start;
   }
   &:nth-of-type(2) {
+    -ms-grid-column: 2;
     justify-self: start;
 
     @media (min-width: 1920px) {
@@ -24,10 +29,12 @@
     }
   }
   &:nth-of-type(3) {
+    -ms-grid-column: 3;
     position: relative;
     top: 1px;
   }
   &:nth-of-type(4) {
+    -ms-grid-column: 4;
     justify-self: end;
 
     @media (min-width: 1920px) {
@@ -35,6 +42,7 @@
     }
   }
   &:nth-of-type(5) {
+    -ms-grid-column: 5;
     position: relative;
     top: 7px;
     right: -5px;

@@ -126,7 +126,7 @@
     </article>
   </section>
 
-  <section class="second-section">
+  <section class="second-section js-second-section">
     <h2 class="visually-hidden">Winter</h2>
 
     <p class="second-section__description">
@@ -144,7 +144,7 @@
             alt="Suvi Koponen sits">
     </picture>
 
-    <article class="card second-section__card">
+    <article class="card second-section__card js-second-section__card">
       <h3 class="card__title">www.vogue.com</h3>
 
       <picture class="picture card__picture">
@@ -163,17 +163,17 @@
       <button class="card__button card__button--small" type="button" aria-label="Open card"></button>
     </article>
 
-    <div class="flip-card second-section__flip-card">
-      <article class="flip-card__description">
+    <div class="flip-card js-flip-card second-section__flip-card">
+      <article class="flip-card__description js-flip-card__description">
         <h3 class="visually-hidden">About Suvi Koponen</h3>
         <p class="flip-card__text">Her modeling career started in 2005&nbsp;and by 2007 she was walking&nbsp;exclusively for Prada and Miu&nbsp;Miu, <span class="flip-card__text--gray">in addition to having five&nbsp;editorials in various editions of&nbsp;Vogue Magazine.</span></p>
         <p class="flip-card__campain flip-card__campain--left">PRADA DUTTI FALL-WINTER 2018&nbsp;AD CAMPAIGN</p>
         <p class="flip-card__campain flip-card__campain--right">Miu Miu DUTTI FALL-summer 2017&nbsp;AD CAMPAIGN</p>
 
-        <button class="flip-card__button" type="button" aria-label="Flip card to photo"></button>
+        <button class="flip-card__button js-flip-card-forward" type="button" aria-label="Flip card to photo"></button>
       </article>
 
-      <div class="flip-card__photo flip-card__photo--disabled">
+      <div class="flip-card__photo js-flip-card__photo flip-card__photo--disabled">
         <picture class="picture flip-card__picture">
           <source type="image/webp"
                   srcset="img/webp/photo7-695.webp 1x,
@@ -184,11 +184,13 @@
                 width="695"
                 alt="Suvi Koponen">
         </picture>
-        <button class="flip-card__button flip-card__button--back" type="button" aria-label="Flip card to description"></button>
+        <button class="flip-card__button flip-card__button--back js-flip-card-back" type="button" aria-label="Flip card to description"></button>
       </div>
     </div>
 
-    <div class="second-section__title" aria-hidden="true">Wint</div>
+    <div class="second-section__title js-winter" aria-hidden="true">Wint</div>
   </section>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>

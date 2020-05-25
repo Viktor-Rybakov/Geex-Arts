@@ -1,10 +1,15 @@
 .first-section {
   position: relative;
   
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 211fr 698fr 102fr 479fr 219fr 165fr 46fr;
   grid-template-columns: 211fr 698fr 102fr 479fr 219fr 165fr 46fr;
+  -ms-grid-rows: min-content min-content min-content min-content;
   grid-template-rows: repeat(4, min-content);
   justify-items: start;
+
+
   
   padding-top: 6px;
   margin-bottom: 60px;
@@ -27,6 +32,10 @@
 
 .first-section__picture {
   &--left {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+
     grid-column: 2/4;
     grid-row: 1/2;
     z-index: 2;
@@ -35,12 +44,21 @@
   }
 
   &--right {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+
     grid-column: 5/7;
     grid-row: 1/2;
     z-index: 1;
   }
 
   &--center {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+
     grid-column: 3/6;
     grid-row: 1/4;
     z-index: 4;
@@ -62,6 +80,8 @@
 }
 
 .first-section__menu {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
   grid-column: 1/2;
   grid-row: 1/2;
 
@@ -71,12 +91,18 @@
 }
 
 .first-section__persons {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   grid-column: 2/3;
   grid-row: 2/4;
   margin: 0;
 }
 
 .first-section__subtitle {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  -ms-grid-row: 4;
   grid-column: 1/-1;
   grid-row: 4/5;
   justify-self: center;
@@ -119,6 +145,7 @@
     left: -3000px;
     transform: translateX(-50%);
     z-index: 3;
+    will-change: left;
 
     animation-name: suvi;
     animation-duration: 1s;
@@ -201,6 +228,7 @@
     bottom: 384px;
     left: -3000px;
     z-index: 6;
+    will-change: left;
 
     animation-name: koponen;
     animation-duration: 2s;
@@ -214,6 +242,7 @@
       bottom: 0;
       transform: rotate(0);
       z-index: 6;
+      will-change: right, bottom, transform;
 
       animation-name: koponen-e;
       animation-duration: 1.5s;
@@ -229,6 +258,7 @@
       bottom: 0;
       transform: rotate(0);
       z-index: 6;
+      will-change: right, bottom, transform;
 
       animation-name: koponen-n;
       animation-duration: 1.5s;
@@ -248,6 +278,8 @@
   min-height: 261px;
   padding: 23px 30px;
   column-gap: 30px;
+
+  will-change: left;
 
   animation-name: first-card;
   animation-duration: 1.5s;
